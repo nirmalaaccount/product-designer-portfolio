@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nirmala R — Product Designer · The Drive</title>
+  <meta name="description" content="Nirmala R is a product designer in Chennai. A scroll-driven drive through selected work: Meesho, ProductPulse AI and WedAssist." />
+  <meta name="theme-color" content="#05070a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Big+Shoulders+Display:wght@500;700;800&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/car/style.css" />
+</head>
+<body>
+  <!-- Ignition -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-half top"></div>
+    <div class="loader-half bottom"></div>
+    <div class="loader-card">
+      <p class="mono">Nirmala R presents</p>
+      <p class="loader-name">The Drive</p>
+      <div class="dial">
+        <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" /><circle class="dial-arc" cx="60" cy="60" r="54" /></svg>
+        <span id="loader-count">0</span>
+      </div>
+      <p class="mono dim">Starting engine</p>
+    </div>
+  </div>
+
+  <canvas id="world" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="bar bar-top">
+    <a class="brand" href="#title">Nirmala R</a>
+    <nav aria-label="Sections">
+      <a href="#about">Driver</a>
+      <a href="#career">Road</a>
+      <a href="#work">Showroom</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <div class="bar bar-bottom" aria-hidden="true">
+    <span class="mono speed"><b id="speed">000</b> km/h <i id="gear">P</i></span>
+    <span class="mono scene-label"><b id="scene-no">01</b> / 08 — <span id="scene-name">Ignition</span></span>
+    <i class="progress" id="progress"></i>
+  </div>
+
+  <main>
+    <!-- 01 Ignition -->
+    <section class="title-card" id="title" data-cam="hero" data-scene="01" data-name="Ignition" data-gear="P">
+      <p class="mono kicker" data-intro>Product Designer · Chennai</p>
+      <h1 data-split data-intro-title>Nirmala R</h1>
+      <p class="tagline" data-intro>Thoughtful UX. Clear interactions. Purposeful visual design.</p>
+      <p class="mono scroll-cue" data-intro><span></span>Scroll to start the engine</p>
+    </section>
+
+    <!-- 02 Get in -->
+    <section class="pin" id="about" style="--len: 260vh" data-cam="about" data-scene="02" data-name="Get in" data-gear="D">
+      <div class="stage">
+        <div class="copy">
+          <p class="mono slate">Scene 02 — Get in. Meet the driver</p>
+          <p class="statement" data-split>I’m Nirmala, a product designer who enjoys turning complex problems into <em>simple, useful</em> experiences.</p>
+          <dl class="facts">
+            <div><dt class="mono">Recent</dt><dd>Product Designer at Matrimony.com, shaping consumer product journeys across Mandap.com, WedAssist, ManyJobs and BharatMatrimony.</dd></div>
+            <div><dt class="mono">Prior</dt><dd>Independent UI/UX design consultant, and earlier a UX designer and UI developer at Tata Consultancy Services.</dd></div>
+            <div><dt class="mono">Studied</dt><dd>B.Sc. Electronics and Communication Systems, Bharathiar University.</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 The road so far -->
+    <section class="pin" id="career" style="--len: 380vh" data-cam="career" data-scene="03" data-name="The road so far" data-gear="D">
+      <div class="stage">
+        <div class="copy">
+          <p class="mono slate">Scene 03 — The road so far</p>
+          <h2 data-split>Five years <em>on the road</em></h2>
+          <ol class="roles">
+            <li class="on"><span class="mono">Apr 2021 — Apr 2022</span><b>Tata Consultancy Services</b><i>UI Developer</i></li>
+            <li><span class="mono">May 2022 — Sep 2024</span><b>Tata Consultancy Services</b><i>UX Designer</i></li>
+            <li><span class="mono">Sep 2024 — Nov 2025</span><b>Independent</b><i>UI/UX Design Consultant</i></li>
+            <li><span class="mono">Nov 2025 — Aug 2026</span><b>Matrimony.com</b><i>Product Designer</i></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 Bay one -->
+    <section class="pin project" id="work" style="--len: 340vh" data-cam="p0" data-project="0" data-scene="04" data-name="Showroom · Meesho" data-gear="P">
+      <div class="stage">
+        <div class="copy">
+          <p class="mono slate">Showroom — Bay 01 / 03 · Self-initiated concept</p>
+          <h2 data-split>Beyond <em>the</em> Price</h2>
+          <p class="logline">An independent exploration of how a shopper’s budget, occasion or deadline could shape what they discover on Meesho.</p>
+          <dl class="meta">
+            <div><dt class="mono">Role</dt><dd>Product Designer</dd></div>
+            <div><dt class="mono">Scope</dt><dd>Discovery to product detail</dd></div>
+            <div><dt class="mono">Status</dt><dd>Unshipped proposal</dd></div>
+          </dl>
+          <div class="beats">
+            <article class="beat on"><h3>A question of timing</h3><p>The audit found Meesho already surfaced ratings, reviews, seller details and delivery information. The question became <em>when</em> shoppers see those signals, especially when buying for an occasion or against a deadline.</p></article>
+            <article class="beat"><h3>Surface delivery sooner</h3><p>The first proposed test puts estimated delivery alongside price and rating on listing cards, so shoppers can compare before opening each product. Product details are organised around purchase questions.</p></article>
+            <article class="beat"><h3>From discovery to decision</h3><p>Three Figma explorations connect intent-led discovery, delivery-aware listings and a future Navratri shopping entry point. A design proposal, pending structured usability testing.</p></article>
+          </div>
+          <div class="pfoot">
+            <ol class="ticks" aria-hidden="true"><li class="on">01</li><li>02</li><li>03</li></ol>
+            <a class="link" href="https://nirmalaaccount.github.io/Nirmala-R-portfolio/meesho-case-study.html" target="_blank" rel="noopener">Read the case study <span>↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 Bay two -->
+    <section class="pin project" style="--len: 340vh" data-cam="p1" data-project="1" data-scene="05" data-name="Showroom · ProductPulse AI" data-gear="P">
+      <div class="stage">
+        <div class="copy">
+          <p class="mono slate">Showroom — Bay 02 / 03 · Independent concept</p>
+          <h2 data-split>ProductPulse <em>AI</em></h2>
+          <p class="logline">A connected workspace that helps product teams see project health, track decisions and brief themselves from sources they can check.</p>
+          <dl class="meta">
+            <div><dt class="mono">Role</dt><dd>Product Designer, end to end</dd></div>
+            <div><dt class="mono">Scope</dt><dd>IA, interactions, interface</dd></div>
+            <div><dt class="mono">Status</dt><dd>Interactive prototype</dd></div>
+          </dl>
+          <div class="beats">
+            <article class="beat on"><h3>Information in fragments</h3><p>Project information lives across task boards, design files, documents, discussions and status meetings. The home view brings portfolio health, launches and the projects needing attention into one place.</p></article>
+            <article class="beat"><h3>Keep both signals visible</h3><p>A team-level update should not silently replace the overall assessment. An “On track” project and a “Blocked” design workstream stay visible together while the product manager reviews the impact.</p></article>
+            <article class="beat"><h3>AI that shows its sources</h3><p>The AI brief cites evidence, shows uncertainty and respects permissions, with human review before anything is shared. Validation is proposed; no measured outcomes are claimed.</p></article>
+          </div>
+          <div class="pfoot">
+            <ol class="ticks" aria-hidden="true"><li class="on">01</li><li>02</li><li>03</li></ol>
+            <a class="link" href="https://nirmalaaccount.github.io/Nirmala-R-portfolio/productpulse-ai-casestudy.html" target="_blank" rel="noopener">Read the case study <span>↗</span></a>
+            <a class="link quiet" href="https://productpulse-ai.gracefulartichoke1.chatgpt.site/" target="_blank" rel="noopener">Open prototype <span>↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 Bay three -->
+    <section class="pin project" style="--len: 340vh" data-cam="p2" data-project="2" data-scene="06" data-name="Showroom · WedAssist" data-gear="P">
+      <div class="stage">
+        <div class="copy">
+          <p class="mono slate">Showroom — Bay 03 / 03 · In-house, Matrimony.com</p>
+          <h2 data-split>Wed<em>Assist</em></h2>
+          <p class="logline">An in-house product that brings wedding services, selection and payment into one connected journey, continued by a Relationship Manager.</p>
+          <dl class="meta">
+            <div><dt class="mono">Role</dt><dd>Product Designer</dd></div>
+            <div><dt class="mono">Scope</dt><dd>Selection to payment</dd></div>
+            <div><dt class="mono">Status</dt><dd>Original in-house design</dd></div>
+          </dl>
+          <div class="beats">
+            <article class="beat on"><h3>A service with a human continuation</h3><p>WedAssist pairs online service selection and payment with a dedicated Relationship Manager. The challenge: choosing relevant services and understanding cost and next steps before paying.</p></article>
+            <article class="beat"><h3>Smaller decisions, kept in context</h3><p>A side drawer preserves the package while categories are chosen, and submission unlocks once the requirement is met. OTP errors offer recovery, and wedding details come before checkout.</p></article>
+            <article class="beat"><h3>Clear outcomes at commitment</h3><p>Payment review and explicit success and failure states lead into Relationship Manager follow-up. I owned the UX/UI screens and connected interactions, working with product, design leadership and engineering.</p></article>
+          </div>
+          <div class="pfoot">
+            <ol class="ticks" aria-hidden="true"><li class="on">01</li><li>02</li><li>03</li></ol>
+            <a class="link" href="https://nirmalaaccount.github.io/Nirmala-R-portfolio/wedassist-casestudy.html" target="_blank" rel="noopener">Read the case study <span>↗</span></a>
+            <a class="link quiet" href="https://www.wedassist.com" target="_blank" rel="noopener">Visit WedAssist <span>↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 The new car -->
+    <section class="pin" id="craft" style="--len: 300vh" data-cam="craft" data-scene="07" data-name="The new car" data-gear="P">
+      <div class="stage">
+        <div class="copy">
+          <p class="mono slate">Scene 07 — The new car</p>
+          <h2 data-split>New car. <em>Same driver.</em></h2>
+          <dl class="spec">
+            <div><dt class="mono">Process</dt><dd><b>Understand</b> the problem, context and journey. <b>Shape</b> flows, wireframes and prototypes. <b>Design</b> hierarchy, visual language and consistency.</dd></div>
+            <div><dt class="mono">Skills</dt><dd>User flows · Information architecture · Journey mapping · Interaction design · Wireframing · Prototyping · Visual design · Design systems · Usability testing · Accessibility</dd></div>
+            <div><dt class="mono">Tools</dt><dd>Figma · FigJam · Framer · Miro · Notion · Adobe XD · HTML &amp; CSS · Tailwind CSS</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 Open road -->
+    <section class="pin" id="contact" style="--len: 280vh" data-cam="end" data-scene="08" data-name="Open road" data-gear="D">
+      <div class="stage">
+        <div class="copy wide">
+          <p class="mono slate">Scene 08 — Open road</p>
+          <h2 class="big" data-split>Let’s make something <em>useful.</em></h2>
+          <div class="cta">
+            <a class="btn" href="https://www.linkedin.com/in/nirmala-r07/" target="_blank" rel="noopener">Message me on LinkedIn <span>↗</span></a>
+            <a class="btn ghost lower" href="mailto:nirmalaabi99@gmail.com">nirmalaabi99@gmail.com <span>↗</span></a>
+          </div>
+          <footer class="credits">
+            <p><span class="mono">Designed &amp; driven by</span>Nirmala R</p>
+            <p><span class="mono">Based in</span>Chennai, India</p>
+            <a class="mono" href="#title">Back to the garage ↑</a>
+          </footer>
+          <p class="attr">3D cars from Sketchfab, resized and optimised for the web. CC BY 4.0:
+            <a href="https://sketchfab.com/3d-models/car-model-blender-2be4c41ccc774fc79f3e598e0091e3b9" target="_blank" rel="noopener">“Car Model - Blender”</a> by artsydigitalartist ·
+            <a href="https://sketchfab.com/3d-models/ferrari-599-gto-14b4f6d9f84d4e30be52a2158685d3ff" target="_blank" rel="noopener">“Ferrari 599 GTO”</a> by Black Snow ·
+            <a href="https://sketchfab.com/3d-models/mclaren-765lt-with-windows-v2-cc1876d0179b42aeb31e004c01a857da" target="_blank" rel="noopener">McLaren 765LT</a> by Sloftm_Carz.
+            CC BY-NC 4.0: <a href="https://sketchfab.com/3d-models/2013-chevrolet-corvette-z06-f8d8ef6c9c254ea79767d16897f711f1" target="_blank" rel="noopener">“2013 Chevrolet Corvette Z06”</a> by Outlaw Games.
+            CC BY-NC-SA 4.0: <a href="https://sketchfab.com/3d-models/alpine-vision-wwwvecarzcom-16cebf1d29b643348e6874b0b8eec33d" target="_blank" rel="noopener">“Alpine Vision | www.vecarz.com”</a> by vecarz.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="/src/car/main.js"></script>
+</body>
+</html>

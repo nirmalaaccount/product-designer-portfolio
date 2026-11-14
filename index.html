@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nirmala R — Product Designer</title>
+  <meta name="description" content="Nirmala R is a product designer in Chennai. Selected work: Meesho, ProductPulse AI and WedAssist." />
+  <meta name="theme-color" content="#080706" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <!-- Opening: film leader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-half top"></div>
+    <div class="loader-half bottom"></div>
+    <div class="loader-card">
+      <p class="mono">A portfolio by</p>
+      <p class="loader-name">Nirmala R</p>
+      <div class="leader">
+        <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" /><circle class="leader-arc" cx="60" cy="60" r="54" /><line x1="60" y1="0" x2="60" y2="120" /><line x1="0" y1="60" x2="120" y2="60" /></svg>
+        <span id="loader-count">0</span>
+      </div>
+      <p class="mono dim">Loading reel</p>
+    </div>
+  </div>
+
+  <canvas id="world" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><i></i></div>
+
+  <!-- Letterbox bars carry the navigation and the running timecode -->
+  <header class="bar bar-top">
+    <a class="brand" href="#title">Nirmala R</a>
+    <nav aria-label="Sections">
+      <a href="#about">Story</a>
+      <a href="#work">Work</a>
+      <a href="#career">Career</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <div class="bar bar-bottom" aria-hidden="true">
+    <span class="mono" id="timecode">00:00:00:00</span>
+    <span class="mono scene-label"><b id="scene-no">01</b> / 08 — <span id="scene-name">Title</span></span>
+    <i class="progress" id="progress"></i>
+  </div>
+
+  <main>
+    <!-- 01 Title card -->
+    <section class="title-card" id="title" data-cam="hero" data-scene="01" data-name="Title">
+      <p class="mono kicker" data-intro>Product Designer · Chennai</p>
+      <h1 data-split data-intro-title>Nirmala R</h1>
+      <p class="tagline" data-intro><em>Thoughtful UX. Clear interactions. Purposeful visual design.</em></p>
+      <p class="mono scroll-cue" data-intro><span></span>Scroll to begin</p>
+    </section>
+
+    <!-- 02 The designer -->
+    <section class="about" id="about" data-cam="about" data-scene="02" data-name="The designer">
+      <p class="mono slate">Scene 02 — The designer</p>
+      <p class="statement" data-scrub>I’m Nirmala, a product designer who enjoys turning complex problems into <em>simple, useful</em> experiences. I’m curious about people, products, and the small details that shape how digital experiences are understood and used.</p>
+      <dl class="facts">
+        <div data-rise><dt class="mono">Most recently</dt><dd>Product Designer at Matrimony.com, shaping consumer product journeys, from flows and interactions to the final interface, across Mandap.com, WedAssist, ManyJobs and BharatMatrimony.</dd></div>
+        <div data-rise><dt class="mono">Before that</dt><dd>Independent UI/UX design consultant, and earlier a UX designer and UI developer at Tata Consultancy Services.</dd></div>
+        <div data-rise><dt class="mono">Studied</dt><dd>B.Sc. Electronics and Communication Systems, Bharathiar University.</dd></div>
+      </dl>
+    </section>
+
+    <!-- 03 Feature one -->
+    <section class="project" id="work" data-cam="p0" data-project="0" data-scene="03" data-name="Meesho">
+      <div class="stage">
+        <div class="pcopy">
+          <p class="mono slate">Feature 01 / 03 — Self-initiated concept</p>
+          <h2 data-split>Beyond <em>the</em> Price</h2>
+          <p class="logline">An independent exploration of how a shopper’s budget, occasion or deadline could shape what they discover on Meesho.</p>
+          <dl class="meta">
+            <div><dt class="mono">Role</dt><dd>Product Designer</dd></div>
+            <div><dt class="mono">Scope</dt><dd>Discovery to product detail</dd></div>
+            <div><dt class="mono">Status</dt><dd>Unshipped proposal</dd></div>
+          </dl>
+          <div class="beats">
+            <article class="beat on"><h3>A question of timing</h3><p>The audit found Meesho already surfaced ratings, reviews, seller details and delivery information. The question became <em>when</em> shoppers see those signals, especially when buying for an occasion or against a deadline.</p></article>
+            <article class="beat"><h3>Surface delivery sooner</h3><p>The first proposed test puts estimated delivery alongside price and rating on listing cards, so shoppers can compare before opening each product. Product details are organised around purchase questions.</p></article>
+            <article class="beat"><h3>From discovery to decision</h3><p>Three Figma explorations connect intent-led discovery, delivery-aware listings and a future Navratri shopping entry point. A design proposal, pending structured usability testing.</p></article>
+          </div>
+          <div class="pfoot">
+            <ol class="ticks" aria-hidden="true"><li class="on">01</li><li>02</li><li>03</li></ol>
+            <a class="link" href="https://nirmalaaccount.github.io/Nirmala-R-portfolio/meesho-case-study.html" target="_blank" rel="noopener">Read the case study <span>↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 Feature two -->
+    <section class="project" data-cam="p1" data-project="1" data-scene="04" data-name="ProductPulse AI">
+      <div class="stage">
+        <div class="pcopy">
+          <p class="mono slate">Feature 02 / 03 — Independent concept</p>
+          <h2 data-split>ProductPulse <em>AI</em></h2>
+          <p class="logline">A connected workspace that helps product teams see project health, track decisions and brief themselves from sources they can check.</p>
+          <dl class="meta">
+            <div><dt class="mono">Role</dt><dd>Product Designer, end to end</dd></div>
+            <div><dt class="mono">Scope</dt><dd>IA, interactions, interface</dd></div>
+            <div><dt class="mono">Status</dt><dd>Interactive prototype</dd></div>
+          </dl>
+          <div class="beats">
+            <article class="beat on"><h3>Information in fragments</h3><p>Project information lives across task boards, design files, documents, discussions and status meetings. The home view brings portfolio health, launches and the projects needing attention into one place.</p></article>
+            <article class="beat"><h3>Keep both signals visible</h3><p>A team-level update should not silently replace the overall assessment. An “On track” project and a “Blocked” design workstream stay visible together while the product manager reviews the impact.</p></article>
+            <article class="beat"><h3>AI that shows its sources</h3><p>The AI brief cites evidence, shows uncertainty and respects permissions, with human review before anything is shared. Validation is proposed; no measured outcomes are claimed.</p></article>
+          </div>
+          <div class="pfoot">
+            <ol class="ticks" aria-hidden="true"><li class="on">01</li><li>02</li><li>03</li></ol>
+            <a class="link" href="https://nirmalaaccount.github.io/Nirmala-R-portfolio/productpulse-ai-casestudy.html" target="_blank" rel="noopener">Read the case study <span>↗</span></a>
+            <a class="link quiet" href="https://productpulse-ai.gracefulartichoke1.chatgpt.site/" target="_blank" rel="noopener">Open prototype <span>↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 Feature three -->
+    <section class="project" data-cam="p2" data-project="2" data-scene="05" data-name="WedAssist">
+      <div class="stage">
+        <div class="pcopy">
+          <p class="mono slate">Feature 03 / 03 — In-house, Matrimony.com</p>
+          <h2 data-split>Wed<em>Assist</em></h2>
+          <p class="logline">An in-house product that brings wedding services, selection and payment into one connected journey, continued by a Relationship Manager.</p>
+          <dl class="meta">
+            <div><dt class="mono">Role</dt><dd>Product Designer</dd></div>
+            <div><dt class="mono">Scope</dt><dd>Selection to payment</dd></div>
+            <div><dt class="mono">Status</dt><dd>Original in-house design</dd></div>
+          </dl>
+          <div class="beats">
+            <article class="beat on"><h3>A service with a human continuation</h3><p>WedAssist pairs online service selection and payment with a dedicated Relationship Manager. The challenge: choosing relevant services and understanding cost and next steps before paying.</p></article>
+            <article class="beat"><h3>Smaller decisions, kept in context</h3><p>A side drawer preserves the package while categories are chosen, and submission unlocks once the requirement is met. OTP errors offer recovery, and wedding details come before checkout.</p></article>
+            <article class="beat"><h3>Clear outcomes at commitment</h3><p>Payment review and explicit success and failure states lead into Relationship Manager follow-up. I owned the UX/UI screens and connected interactions, working with product, design leadership and engineering.</p></article>
+          </div>
+          <div class="pfoot">
+            <ol class="ticks" aria-hidden="true"><li class="on">01</li><li>02</li><li>03</li></ol>
+            <a class="link" href="https://nirmalaaccount.github.io/Nirmala-R-portfolio/wedassist-casestudy.html" target="_blank" rel="noopener">Read the case study <span>↗</span></a>
+            <a class="link quiet" href="https://www.wedassist.com" target="_blank" rel="noopener">Visit WedAssist <span>↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 Career -->
+    <section class="career" id="career" data-cam="career" data-scene="06" data-name="Career">
+      <p class="mono slate">Scene 06 — In order of appearance</p>
+      <h2 data-split>Five years, <em>four</em> roles</h2>
+      <ol class="roles">
+        <li data-rise><span class="mono">Nov 2025 — Aug 2026</span><b>Matrimony.com</b><i>Product Designer</i></li>
+        <li data-rise><span class="mono">Sep 2024 — Nov 2025</span><b>Independent</b><i>UI/UX Design Consultant</i></li>
+        <li data-rise><span class="mono">May 2022 — Sep 2024</span><b>Tata Consultancy Services</b><i>UX Designer</i></li>
+        <li data-rise><span class="mono">Apr 2021 — Apr 2022</span><b>Tata Consultancy Services</b><i>UI Developer</i></li>
+      </ol>
+    </section>
+
+    <!-- 07 Craft -->
+    <section class="craft" id="craft" data-cam="craft" data-scene="07" data-name="Craft">
+      <p class="mono slate">Scene 07 — How the work gets made</p>
+      <h2 data-split>Understand. Shape. <em>Design.</em></h2>
+      <div class="acts">
+        <article data-rise><span class="mono">Act I</span><h3>Understand</h3><p>Structure the problem, explore context and map the journey.</p></article>
+        <article data-rise><span class="mono">Act II</span><h3>Shape</h3><p>Develop flows, wireframes and prototypes to explore clearer interactions.</p></article>
+        <article data-rise><span class="mono">Act III</span><h3>Design</h3><p>Refine hierarchy, visual language and interface consistency.</p></article>
+      </div>
+      <div class="marquee" aria-label="Skills">
+        <div class="track"><span>User flows</span><span>Information architecture</span><span>Journey mapping</span><span>Interaction design</span><span>Wireframing</span><span>Prototyping</span><span>Visual design</span><span>Design systems</span><span>Usability testing</span><span>Accessibility</span></div>
+      </div>
+      <div class="marquee reverse" aria-label="Tools">
+        <div class="track"><span>Figma</span><span>FigJam</span><span>Framer</span><span>Miro</span><span>Notion</span><span>Adobe XD</span><span>HTML &amp; CSS</span><span>Tailwind CSS</span></div>
+      </div>
+    </section>
+
+    <!-- 08 End -->
+    <section class="end" id="contact" data-cam="end" data-scene="08" data-name="End">
+      <p class="mono slate">Scene 08 — The end, and a beginning</p>
+      <h2 data-split>Let’s make something <em>useful.</em></h2>
+      <div class="cta">
+        <a class="btn" href="https://www.linkedin.com/in/nirmala-r07/" target="_blank" rel="noopener">Message me on LinkedIn <span>↗</span></a>
+        <a class="btn ghost lower" href="mailto:nirmalaabi99@gmail.com">nirmalaabi99@gmail.com <span>↗</span></a>
+      </div>
+      <footer class="credits">
+        <p><span class="mono">Designed &amp; directed by</span>Nirmala R</p>
+        <p><span class="mono">Based in</span>Chennai, India</p>
+        <p><span class="mono">Year</span>2026</p>
+        <a class="mono" href="#title">Back to the opening ↑</a>
+      </footer>
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
