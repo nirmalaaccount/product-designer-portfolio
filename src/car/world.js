@@ -210,7 +210,7 @@ const screenFrag = `uniform sampler2D map; uniform float uAlpha; varying vec2 vU
 export function createWorld(canvas, projectImages, { onProgress, reduced }) {
   const small = Math.min(innerWidth, innerHeight) < 700
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: 'high-performance' })
-  renderer.setPixelRatio(Math.min(devicePixelRatio, small ? 1.5 : 2))
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5))
   renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.15
   const scene = new THREE.Scene()
   scene.background = NIGHT.clone(); scene.fog = new THREE.FogExp2(NIGHT.getHex(), 0.017)
@@ -284,7 +284,7 @@ export function createWorld(canvas, projectImages, { onProgress, reduced }) {
   for (let z = HALL[0] - 7; z > HALL[1] + 4; z -= 9) box(17, 0.06, 0.4, stripMat, 0, 6.95, z)
   let floor
   if (small) floor = new THREE.Mesh(new THREE.PlaneGeometry(26, hallLen), new THREE.MeshStandardMaterial({ color: 0x0a0c0f, roughness: 0.12, metalness: 0.7 }))
-  else floor = new Reflector(new THREE.PlaneGeometry(26, hallLen), { clipBias: 0.003, textureWidth: 1024, textureHeight: 1024, color: 0x262b31 })
+  else floor = new Reflector(new THREE.PlaneGeometry(26, hallLen), { clipBias: 0.003, textureWidth: 768, textureHeight: 768, color: 0x262b31 })
   floor.rotation.x = -Math.PI / 2; floor.position.set(0, 0.012, hallMid); add(floor)
 
   const turntable = (x, z, r, tint) => {
