@@ -20,9 +20,9 @@ const $$ = (s, el = document) => [...el.querySelectorAll(s)]
 // Runtime-built URLs (not bundler imports), so they need the deploy's base path by hand.
 const BASE = import.meta.env.BASE_URL
 const PROJECT_IMAGES = [
-  [`${BASE}work/meesho-1.jpg`, `${BASE}work/meesho-2.jpg`, `${BASE}work/meesho-3.jpg`],
-  [`${BASE}work/pulse-1.jpg`, `${BASE}work/pulse-2.jpg`, `${BASE}work/pulse-3.jpg`],
   [`${BASE}work/wed-1.jpg`, `${BASE}work/wed-2.jpg`, `${BASE}work/wed-3.jpg`],
+  [`${BASE}work/pulse-1.jpg`, `${BASE}work/pulse-2.jpg`, `${BASE}work/pulse-3.jpg`],
+  [`${BASE}work/snapchat-1.jpg`, `${BASE}work/snapchat-2.jpg`, `${BASE}work/snapchat-3.jpg`],
 ]
 
 // split headings into words for the rise-in reveal (keeps <em>)

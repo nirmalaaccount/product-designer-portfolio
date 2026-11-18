@@ -301,7 +301,7 @@ export function createWorld(canvas, projectImages, { onProgress, reduced }) {
   const gltf = new GLTFLoader(manager)
   const draco = new DRACOLoader().setDecoderPath(`${BASE}draco/`); gltf.setDRACOLoader(draco)
   const models = Object.fromEntries(Object.entries(CAR_MODELS).map(([k, c]) => [k, gltf.loadAsync(c.url).then((g) => g.scene)]))
-  // showroom: Corvette (Meesho), Ferrari (ProductPulse AI), Alpine Vision (WedAssist); the garage car is the Tesla
+  // showroom: Corvette (WedAssist), Ferrari (ProductPulse AI), Alpine Vision (Snapchat); the garage car is the Tesla
   const BAY_CARS = [{ key: 'corvette' }, { key: 'ferrari' }, { key: 'alpine' }]
   const bays = BAY_Z.map((z, i) => {
     const table = turntable(BAY_X, z, 2.9, BAY_PAINT[i])
